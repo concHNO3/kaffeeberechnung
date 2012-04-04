@@ -11,6 +11,14 @@ Preisklein = 0.50;
 Zeitraum   = 22;
 ArbeitstageProWoche = 4;
 
+%Dateineingabe:
+printf("Anzahl der getrunkenen kleinen Kaffees: ");
+Kaffeklein = scanf("%d","1");
+printf("Anzahl der getrunkenen grossen Kaffees: ")
+Kaffegross = scanf("%d","C");
+printf("Tage seit Projektbeginn: ");
+Zeitraum = scanf("%d","C");
+
 %Berechnung:
 Gesamtpreis = (Kaffeklein * Preisklein + Kaffegross * Preisgross);
 GesamtKaffee = (Kaffegross + Kaffeklein);
@@ -20,6 +28,7 @@ DurchschnittlicherKaffeeProArbeitstag = (Kaffegross + Kaffeklein) / (Zeitraum * 
 DurchschnittlicherPreisProTag = (Kaffeklein * Preisklein + Kaffegross * Preisgross)/Zeitraum;
 DurchschnittlicherPreisProArbeitstag= (Kaffeklein * Preisklein + Kaffegross * Preisgross)/ (Zeitraum * ArbeitstageProWoche/7);
 
+printf("\n");
 printf("im Gesamten Zeitraum getrunkene Kaffee: %d \n", GesamtKaffee);
 printf("Durchschnittliche Anzahl der Kaffee pro Tag: %f \n", DurchschnittlicherKaffeeProTag);
 printf("Durchschnittliche Anzahl der Kaffee pro Arbeitstag: %f \n", DurchschnittlicherKaffeeProArbeitstag);
